@@ -1,4 +1,4 @@
-# hello-word
+# vue-element-select
 
 ## Project setup
 ```
@@ -18,6 +18,11 @@ pnpm run build
 ### Lints and fixes files
 ```
 pnpm run lint
+```
+
+### node 
+```
+version 16.18.0
 ```
 
 ### Customize configuration
