@@ -1,17 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <el-select size="small" v-model="type" clearable placeholder="请选择类型">
+    <el-option value="1" label="1"></el-option>
+    <el-option value="2" label="2"></el-option>
+  </el-select>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import { ref } from "vue";
+import { ElSelect, ElOption } from "element-plus";
+const type = ref("1");
 </script>
 
 <style>
